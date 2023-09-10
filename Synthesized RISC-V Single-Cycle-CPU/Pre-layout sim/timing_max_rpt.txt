@@ -1,0 +1,114 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'CPU' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : CPU
+Version: Q-2019.12
+Date   : Thu Dec  1 19:52:41 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: ir[12] (input port clocked by CLK)
+  Endpoint: next_psr_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                tsmc18_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                  35.00      35.00
+  clock network delay (ideal)                             0.00      35.00
+  input external delay                                    1.00      36.00 f
+  ir[12] (in)                                             0.24      36.24 f
+  U6600/Y (INVX1)                                         0.58      36.82 r
+  U9859/Y (NOR2X1)                                        0.44      37.26 f
+  U4641/Y (AND2X2)                                        1.13      38.39 f
+  U9991/Y (AOI22X1)                                       0.55      38.95 r
+  U9995/Y (NAND4X1)                                       0.21      39.16 f
+  U9996/Y (OR2X1)                                         0.49      39.65 f
+  U6297/Y (OAI22X1)                                       2.52      42.17 r
+  U5954/Y (INVX1)                                         2.19      44.36 f
+  U5419/Y (INVX1)                                         2.29      46.65 r
+  U4939/Y (INVX1)                                         0.84      47.49 f
+  U4787/Y (INVX1)                                         0.82      48.31 r
+  U4759/Y (CLKINVX3)                                      1.87      50.18 f
+  mult_372/a[11] (CPU_DW_mult_uns_0)                      0.00      50.18 f
+  mult_372/U1596/Y (XOR2X1)                               0.85      51.03 r
+  mult_372/U1595/Y (NAND2BX1)                             0.51      51.54 f
+  mult_372/U1098/Y (INVX1)                                2.03      53.57 r
+  mult_372/U1529/Y (AOI22X1)                              0.30      53.87 f
+  mult_372/U1528/Y (XOR2X1)                               0.45      54.32 r
+  mult_372/U283/S (ADDHXL)                                0.37      54.69 r
+  mult_372/U282/CO (CMPR42X1)                             1.14      55.83 f
+  mult_372/U280/S (CMPR42X1)                              0.52      56.35 f
+  mult_372/U168/CO (ADDFX2)                               0.55      56.90 f
+  mult_372/U167/CO (ADDFX2)                               0.40      57.29 f
+  mult_372/U166/CO (ADDFX2)                               0.40      57.69 f
+  mult_372/U165/CO (ADDFX2)                               0.40      58.08 f
+  mult_372/U164/CO (ADDFX2)                               0.40      58.48 f
+  mult_372/U163/CO (ADDFX2)                               0.40      58.87 f
+  mult_372/U162/CO (ADDFX2)                               0.40      59.27 f
+  mult_372/U161/CO (ADDFX2)                               0.40      59.66 f
+  mult_372/U160/CO (ADDFX2)                               0.40      60.06 f
+  mult_372/U159/CO (ADDFX2)                               0.40      60.45 f
+  mult_372/U158/CO (ADDFX2)                               0.40      60.85 f
+  mult_372/U157/CO (ADDFX2)                               0.40      61.24 f
+  mult_372/U156/CO (ADDFX2)                               0.40      61.64 f
+  mult_372/U155/CO (ADDFX2)                               0.40      62.03 f
+  mult_372/U154/CO (ADDFX2)                               0.40      62.43 f
+  mult_372/U153/CO (ADDFX2)                               0.40      62.82 f
+  mult_372/U152/CO (ADDFX2)                               0.40      63.22 f
+  mult_372/U151/CO (ADDFX2)                               0.40      63.61 f
+  mult_372/U150/CO (ADDFX2)                               0.40      64.01 f
+  mult_372/U149/CO (ADDFX2)                               0.40      64.40 f
+  mult_372/U148/CO (ADDFX2)                               0.40      64.80 f
+  mult_372/U147/CO (ADDFX2)                               0.40      65.19 f
+  mult_372/U1209/Y (XOR2X1)                               0.36      65.55 r
+  mult_372/U1208/Y (XOR2X1)                               0.37      65.93 r
+  mult_372/U1207/Y (XOR2X1)                               0.56      66.49 r
+  mult_372/product[32] (CPU_DW_mult_uns_0)                0.00      66.49 r
+  U5400/Y (XOR2X1)                                        0.45      66.94 r
+  U4931/Y (XOR2X1)                                        0.36      67.31 r
+  U4929/Y (XOR2X1)                                        0.37      67.67 r
+  U4928/Y (XNOR2X1)                                       0.37      68.05 r
+  U4935/Y (XOR2X1)                                        0.36      68.41 r
+  U4933/Y (XOR2X1)                                        0.36      68.77 r
+  U4932/Y (XOR2X1)                                        0.36      69.13 r
+  U4786/Y (XOR2X1)                                        0.36      69.50 r
+  U4784/Y (XOR2X1)                                        0.36      69.86 r
+  U4783/Y (XOR2X1)                                        0.36      70.22 r
+  U4758/Y (XOR2X1)                                        0.36      70.59 r
+  U4756/Y (XOR2X1)                                        0.36      70.95 r
+  U4755/Y (XOR2X1)                                        0.37      71.32 r
+  U4926/Y (XOR2X1)                                        0.34      71.65 f
+  U4924/Y (AOI22X1)                                       0.35      72.00 r
+  U5949/Y (NAND4X1)                                       0.22      72.22 f
+  next_psr_reg[2]/D (DFFRHQX1)                            0.00      72.22 f
+  data arrival time                                                 72.22
+
+  clock CLK (rise edge)                                 105.00     105.00
+  clock network delay (ideal)                             0.00     105.00
+  next_psr_reg[2]/CK (DFFRHQX1)                           0.00     105.00 r
+  library setup time                                     -0.39     104.61
+  data required time                                               104.61
+  --------------------------------------------------------------------------
+  data required time                                               104.61
+  data arrival time                                                -72.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                       32.39
+
+
+1
