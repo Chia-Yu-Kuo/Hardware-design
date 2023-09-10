@@ -1,0 +1,110 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Top
+Version: Q-2019.12
+Date   : Sat Dec 10 15:04:17 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: controller/E_op_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg_e/imm_out_reg[1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                tsmc18_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  controller/E_op_reg[0]/CK (DFFRHQX1)                    0.00 #    30.00 r
+  controller/E_op_reg[0]/Q (DFFRHQX1)                     1.76      31.76 r
+  controller/U54/Y (INVX1)                                0.89      32.66 f
+  controller/U15/Y (OAI21XL)                              0.44      33.09 r
+  controller/U14/Y (AOI21X1)                              0.76      33.85 f
+  controller/E_alu_op2_sel (Controller)                   0.00      33.85 f
+  mux_alu_oper2/sel (Mux_3)                               0.00      33.85 f
+  mux_alu_oper2/U4/Y (INVX1)                              1.97      35.82 r
+  mux_alu_oper2/U3/Y (INVX1)                              1.35      37.17 f
+  mux_alu_oper2/U1/Y (INVX1)                              2.10      39.27 r
+  mux_alu_oper2/U6/Y (AOI22X1)                            0.19      39.47 f
+  mux_alu_oper2/U5/Y (INVX1)                              2.15      41.61 r
+  mux_alu_oper2/o[2] (Mux_3)                              0.00      41.61 r
+  alu/operand2[2] (ALU)                                   0.00      41.61 r
+  alu/U648/Y (INVX1)                                      2.02      43.63 f
+  alu/U295/Y (INVX1)                                      2.28      45.91 r
+  alu/U110/Y (INVX1)                                      0.39      46.30 f
+  alu/U24/Y (INVX1)                                       2.26      48.55 r
+  alu/r416/B[2] (ALU_DW01_cmp6_0)                         0.00      48.55 r
+  alu/r416/U82/Y (NOR2X1)                                 0.48      49.03 f
+  alu/r416/U72/Y (AOI211X1)                               0.47      49.50 r
+  alu/r416/U71/Y (AOI221X1)                               0.19      49.69 f
+  alu/r416/U68/Y (OAI222XL)                               0.59      50.28 r
+  alu/r416/U67/Y (AOI222X1)                               0.31      50.59 f
+  alu/r416/U63/Y (OAI222XL)                               0.51      51.10 r
+  alu/r416/U62/Y (AOI32X1)                                0.27      51.36 f
+  alu/r416/U59/Y (AOI211X1)                               0.43      51.79 r
+  alu/r416/U58/Y (AOI221X1)                               0.19      51.98 f
+  alu/r416/U57/Y (OAI32X1)                                0.45      52.43 r
+  alu/r416/U56/Y (AOI2BB1X1)                              0.20      52.63 f
+  alu/r416/U54/Y (OAI222XL)                               0.45      53.08 r
+  alu/r416/U53/Y (AOI32X1)                                0.27      53.35 f
+  alu/r416/U51/Y (AOI211X1)                               0.43      53.78 r
+  alu/r416/U50/Y (AOI221X1)                               0.18      53.96 f
+  alu/r416/U48/Y (OAI222XL)                               0.50      54.46 r
+  alu/r416/U47/Y (AOI32X1)                                0.27      54.73 f
+  alu/r416/U45/Y (AOI211X1)                               0.43      55.15 r
+  alu/r416/U44/Y (AOI221X1)                               0.18      55.33 f
+  alu/r416/U42/Y (OAI222XL)                               0.50      55.84 r
+  alu/r416/U41/Y (AOI32X1)                                0.26      56.10 f
+  alu/r416/U40/Y (OAI22X1)                                0.67      56.77 r
+  alu/r416/U3/Y (INVX1)                                   0.29      57.06 f
+  alu/r416/U39/Y (NAND4BXL)                               0.35      57.40 r
+  alu/r416/U36/Y (NOR4BX1)                                0.18      57.59 f
+  alu/r416/U35/Y (NAND2X1)                                0.30      57.88 r
+  alu/r416/NE (ALU_DW01_cmp6_0)                           0.00      57.88 r
+  alu/U644/Y (AOI221X1)                                   0.21      58.09 f
+  alu/U643/Y (OAI21XL)                                    0.45      58.55 r
+  alu/branch_taken (ALU)                                  0.00      58.55 r
+  controller/branch_taken (Controller)                    0.00      58.55 r
+  controller/U12/Y (INVX1)                                0.15      58.69 f
+  controller/U11/Y (OAI21XL)                              0.34      59.04 r
+  controller/jb (Controller)                              0.00      59.04 r
+  U3/Y (INVX1)                                            0.17      59.21 f
+  U2/Y (INVX1)                                            0.53      59.74 r
+  reg_e/jb (Reg_E)                                        0.00      59.74 r
+  reg_e/U13/Y (OR2X2)                                     2.32      62.06 r
+  reg_e/U6/Y (INVX1)                                      0.56      62.62 f
+  reg_e/U4/Y (INVX1)                                      1.95      64.57 r
+  reg_e/U99/Y (NOR2BX1)                                   0.27      64.83 f
+  reg_e/imm_out_reg[1]/D (DFFRHQX1)                       0.00      64.83 f
+  data arrival time                                                 64.83
+
+  clock CLK (rise edge)                                  90.00      90.00
+  clock network delay (ideal)                             0.00      90.00
+  reg_e/imm_out_reg[1]/CK (DFFRHQX1)                      0.00      90.00 r
+  library setup time                                     -0.43      89.57
+  data required time                                                89.57
+  --------------------------------------------------------------------------
+  data required time                                                89.57
+  data arrival time                                                -64.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                       24.73
+
+
+1

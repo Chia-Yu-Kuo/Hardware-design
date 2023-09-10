@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+        -sort_by group
+Design : Top
+Version: Q-2019.12
+Date   : Sat Dec 10 15:04:17 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: dm_read_data[0]
+              (input port clocked by CLK)
+  Endpoint: reg_w/ld_data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                tsmc18_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  input external delay                                    0.20      30.20 f
+  dm_read_data[0] (in)                                    0.04      30.24 f
+  reg_w/ld_data_in[0] (Reg_W)                             0.00      30.24 f
+  reg_w/ld_data_out_reg[0]/D (DFFRHQX1)                   0.00      30.24 f
+  data arrival time                                                 30.24
+
+  clock CLK (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  reg_w/ld_data_out_reg[0]/CK (DFFRHQX1)                  0.00      30.00 r
+  library hold time                                      -0.03      29.97
+  data required time                                                29.97
+  --------------------------------------------------------------------------
+  data required time                                                29.97
+  data arrival time                                                -30.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+1

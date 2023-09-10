@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Top
+Version: Q-2019.12
+Date   : Sat Dec 10 15:04:17 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/ncku_class/vsd2022/vsd202200/dv_data/db/slow.db)
+
+Number of ports:                         3117
+Number of nets:                         10888
+Number of cells:                         7938
+Number of combinational cells:           6434
+Number of sequential cells:              1458
+Number of macros/black boxes:               0
+Number of buf/inv:                       1136
+Number of references:                      23
+
+Combinational area:             109827.748599
+Buf/Inv area:                     7584.192095
+Noncombinational area:           84816.548157
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1112212.279449
+
+Total cell area:                194644.296755
+Total area:                    1306856.576205
+1

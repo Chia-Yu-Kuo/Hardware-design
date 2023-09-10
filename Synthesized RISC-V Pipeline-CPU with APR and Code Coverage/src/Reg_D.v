@@ -1,0 +1,37 @@
+module Reg_D (clk,rst,current_pc_in,inst_in,stall,jb,current_pc_out,inst_out);
+    input clk,rst,stall,jb;
+    input [31:0] inst_in;
+	input [15:0] current_pc_in;
+	output reg[15:0] current_pc_out;
+    output reg[31:0] inst_out;
+
+    always @(posedge clk or posedge rst) 
+    begin
+        if (rst) 
+        begin
+            current_pc_out <= 16'b0;    
+            inst_out <=16'b0;
+        end
+        else
+        begin
+            if (stall) 
+            begin
+                current_pc_out <= current_pc_out;    
+                inst_out <= inst_out;
+            end
+            else
+            begin
+                if (jb)         // addi x0 x0 0 ???
+                begin
+                    current_pc_out <= current_pc_in;    
+                    inst_out <= 32'b00000000000000000000000000010011;
+                end
+                else
+                begin
+                    current_pc_out <= current_pc_in;    
+                    inst_out <= inst_in;  
+                end                
+            end
+        end    
+    end
+endmodule

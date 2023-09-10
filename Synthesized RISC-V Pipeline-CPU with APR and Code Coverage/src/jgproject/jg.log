@@ -1,0 +1,176 @@
+# ----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2019.12
+# platform  : Linux 2.6.32-696.el6.x86_64
+# version   : 2019.12 FCS 64 bits
+# build date: 2019.12.18 18:34:52 PST
+# ----------------------------------------
+# started   : 2022-12-08 21:48:51 CST
+# hostname  : cic-svr.cic-train
+# pid       : 20503
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:45594' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEUAAAAAAAAB4A==' '-proj' '/home/ncku_class/vsd2022/vsd202271/final/src/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ncku_class/vsd2022/vsd202271/final/src/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2019 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/ncku_class/vsd2022/vsd202271/final/src/jgproject/sessionLogs/session_0
+
+/home/ncku_class/vsd2022/vsd202271/final/src/jgproject/jg.log
+INFO: successfully checked out licenses "jasper_pint" and "jasper_dao".
+INFO: reading configuration file "/home/ncku_class/vsd2022/vsd202271/.config/jasper/jaspergold.conf".
+% check_superlint -init
+INFO (INL204): Disabling pipeline elaboration since it is not supported in Superlint App.
+% include /home/ncku_class/vsd2022/vsd202271/final/src/superlint.tcl
+%% ##------------------Don't touch----------------------##
+%% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+%% 
+%% # Config rules
+%% config_rtlds -rule -enable -domain { LINT }
+%% config_rtlds -rule -disable -domain { DFT AUTO_FORMAL }
+%% 
+%% # ivcad2020_constrain //
+%% config_rtlds -rule  -disable -category { NAMING }
+%% config_rtlds -rule  -disable -tag { IDN_NR_CKYW NAM_NR_REPU MOD_NR_PGAT MOD_NO_IPRG FLP_NR_MXCS REG_NR_RWRC INS_NR_INPR MOD_NS_GLGC OTP_NR_ASYA}
+%%  
+%% # ivcad2020_constrain //
+%% 
+%% ##------------------Don't touch----------------------##
+%% 
+%% # import and elaborate design //
+%% analyze -v2k ./Top.v; ## modify your file name ##
+[-- (VERI-1482)] Analyzing Verilog file './Top.v'
+[ERROR (VERI-1245)] ./Top.v(1): cannot open include file './src/Adder.v'
+[INFO (VERI-1328)] ./Top.v(2): analyzing included file './../src/ALU.v'
+[ERROR (VERI-1072)] ./../src/ALU.v(233): module 'ALU' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(3): analyzing included file './../src/Controller.v'
+[ERROR (VERI-1072)] ./../src/Controller.v(330): module 'Controller' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(4): analyzing included file './../src/Decoder.v'
+[ERROR (VERI-1072)] ./../src/Decoder.v(18): module 'Decoder' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(5): analyzing included file './../src/Imme_Ext.v'
+[ERROR (VERI-1072)] ./../src/Imme_Ext.v(58): module 'Imme_Ext' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(6): analyzing included file './../src/JB_Unit.v'
+[ERROR (VERI-1072)] ./../src/JB_Unit.v(13): module 'JB_Unit' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(7): analyzing included file './../src/LD_Filter.v'
+[ERROR (VERI-1072)] ./../src/LD_Filter.v(34): module 'LD_Filter' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(8): analyzing included file './../src/Mux_3to1.v'
+[ERROR (VERI-1072)] ./../src/Mux_3to1.v(27): module 'Mux_3to1' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(9): analyzing included file './../src/Mux.v'
+[ERROR (VERI-1072)] ./../src/Mux.v(8): module 'Mux' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(10): analyzing included file './../src/Reg_D.v'
+[ERROR (VERI-1072)] ./../src/Reg_D.v(35): module 'Reg_D' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(11): analyzing included file './../src/Reg_E.v'
+[ERROR (VERI-1072)] ./../src/Reg_E.v(33): module 'Reg_E' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(12): analyzing included file './../src/Reg_M.v'
+[ERROR (VERI-1072)] ./../src/Reg_M.v(23): module 'Reg_M' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(13): analyzing included file './../src/Reg_PC.v'
+[ERROR (VERI-1072)] ./../src/Reg_PC.v(29): module 'Reg_PC' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(14): analyzing included file './../src/Reg_W.v'
+[ERROR (VERI-1072)] ./../src/Reg_W.v(24): module 'Reg_W' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(15): analyzing included file './../src/RegFile.v'
+[ERROR (VERI-1072)] ./../src/RegFile.v(38): module 'RegFile' ignored due to previous errors
+[INFO (VERI-1328)] ./Top.v(16): analyzing included file './../src/SRAM.v'
+[ERROR (VERI-1072)] ./../src/SRAM.v(66): module 'SRAM' ignored due to previous errors
+[ERROR (VERI-1072)] ./Top.v(265): module 'Top' ignored due to previous errors
+Summary of errors detected:
+	[ERROR (VERI-1245)] ./Top.v(1): cannot open include file './src/Adder.v'
+	[ERROR (VERI-1072)] ./../src/ALU.v(233): module 'ALU' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Controller.v(330): module 'Controller' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Decoder.v(18): module 'Decoder' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Imme_Ext.v(58): module 'Imme_Ext' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/JB_Unit.v(13): module 'JB_Unit' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/LD_Filter.v(34): module 'LD_Filter' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Mux_3to1.v(27): module 'Mux_3to1' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Mux.v(8): module 'Mux' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Reg_D.v(35): module 'Reg_D' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Reg_E.v(33): module 'Reg_E' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Reg_M.v(23): module 'Reg_M' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Reg_PC.v(29): module 'Reg_PC' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/Reg_W.v(24): module 'Reg_W' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/RegFile.v(38): module 'RegFile' ignored due to previous errors
+	[ERROR (VERI-1072)] ./../src/SRAM.v(66): module 'SRAM' ignored due to previous errors
+	[ERROR (VERI-1072)] ./Top.v(265): module 'Top' ignored due to previous errors
+ERROR at line 17 in file /home/ncku_class/vsd2022/vsd202271/final/src/superlint.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 17 errors detected in the design file(s).
+
+
+% include {/home/ncku_class/vsd2022/vsd202271/final/src/superlint.tcl}
+%% ##------------------Don't touch----------------------##
+%% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+%% 
+%% # Config rules
+%% config_rtlds -rule -enable -domain { LINT }
+%% config_rtlds -rule -disable -domain { DFT AUTO_FORMAL }
+%% 
+%% # ivcad2020_constrain //
+%% config_rtlds -rule  -disable -category { NAMING }
+%% config_rtlds -rule  -disable -tag { IDN_NR_CKYW NAM_NR_REPU MOD_NR_PGAT MOD_NO_IPRG FLP_NR_MXCS REG_NR_RWRC INS_NR_INPR MOD_NS_GLGC OTP_NR_ASYA}
+%%  
+%% # ivcad2020_constrain //
+%% 
+%% ##------------------Don't touch----------------------##
+%% 
+%% # import and elaborate design //
+%% analyze -v2k ./Top.v; ## modify your file name ##
+[-- (VERI-1482)] Analyzing Verilog file './Top.v'
+[INFO (VERI-1328)] ./Top.v(1): analyzing included file './../src/Adder.v'
+[INFO (VERI-1328)] ./Top.v(2): analyzing included file './../src/ALU.v'
+[INFO (VERI-1328)] ./Top.v(3): analyzing included file './../src/Controller.v'
+[INFO (VERI-1328)] ./Top.v(4): analyzing included file './../src/Decoder.v'
+[INFO (VERI-1328)] ./Top.v(5): analyzing included file './../src/Imme_Ext.v'
+[INFO (VERI-1328)] ./Top.v(6): analyzing included file './../src/JB_Unit.v'
+[INFO (VERI-1328)] ./Top.v(7): analyzing included file './../src/LD_Filter.v'
+[INFO (VERI-1328)] ./Top.v(8): analyzing included file './../src/Mux_3to1.v'
+[INFO (VERI-1328)] ./Top.v(9): analyzing included file './../src/Mux.v'
+[INFO (VERI-1328)] ./Top.v(10): analyzing included file './../src/Reg_D.v'
+[INFO (VERI-1328)] ./Top.v(11): analyzing included file './../src/Reg_E.v'
+[INFO (VERI-1328)] ./Top.v(12): analyzing included file './../src/Reg_M.v'
+[INFO (VERI-1328)] ./Top.v(13): analyzing included file './../src/Reg_PC.v'
+[INFO (VERI-1328)] ./Top.v(14): analyzing included file './../src/Reg_W.v'
+[INFO (VERI-1328)] ./Top.v(15): analyzing included file './../src/RegFile.v'
+[ERROR (VERI-1245)] ./Top.v(16): cannot open include file './src/SRAM.v'
+[ERROR (VERI-1072)] ./Top.v(265): module 'Top' ignored due to previous errors
+Summary of errors detected:
+	[ERROR (VERI-1245)] ./Top.v(16): cannot open include file './src/SRAM.v'
+	[ERROR (VERI-1072)] ./Top.v(265): module 'Top' ignored due to previous errors
+ERROR at line 17 in file /home/ncku_class/vsd2022/vsd202271/final/src/superlint.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 2 errors detected in the design file(s).
+
+
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

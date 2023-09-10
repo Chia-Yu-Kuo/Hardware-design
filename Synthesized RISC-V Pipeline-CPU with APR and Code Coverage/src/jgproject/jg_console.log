@@ -1,0 +1,55 @@
+2022-12-08 21:48:46.269300 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.269468 (20487) main____ INFO    JasperGold version info
+2022-12-08 21:48:46.269498 (20487) main____ INFO      tool      : JasperGold 2019.12
+2022-12-08 21:48:46.269524 (20487) main____ INFO      version   : 2019.12 FCS 64 bits
+2022-12-08 21:48:46.269545 (20487) main____ INFO      build date: 2019.12.18 18:34:52 PST
+2022-12-08 21:48:46.269561 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.269575 (20487) main____ INFO    Runtime info:
+2022-12-08 21:48:46.269593 (20487) main____ INFO      platform  : Linux 2.6.32-696.el6.x86_64 x86_64
+2022-12-08 21:48:46.269617 (20487) main____ INFO      hostname  : cic-svr
+2022-12-08 21:48:46.269634 (20487) main____ INFO      pid       : 20487
+2022-12-08 21:48:46.269651 (20487) main____ INFO      arguments : '-style' 'windows' '-superlint'
+2022-12-08 21:48:46.269677 (20487) main____ INFO      locale    : UTF-8
+2022-12-08 21:48:46.269698 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.269713 (20487) main____ INFO    System resource limits info:
+2022-12-08 21:48:46.269731 (20487) main____ INFO      virtual memory: unlimited
+2022-12-08 21:48:46.269748 (20487) main____ INFO      cpu time      : unlimited
+2022-12-08 21:48:46.269787 (20487) main____ INFO      stack size    : 10485760 B
+2022-12-08 21:48:46.269812 (20487) main____ INFO      core file size: 0 B
+2022-12-08 21:48:46.269840 (20487) main____ INFO      open files    : 1024
+2022-12-08 21:48:46.269863 (20487) main____ INFO      file size     : unlimited
+2022-12-08 21:48:46.269878 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.269893 (20487) main____ INFO    Memory statistics:
+2022-12-08 21:48:46.269908 (20487) main____ INFO      total physical memory  : 264530724 kB
+2022-12-08 21:48:46.269922 (20487) main____ INFO      free physical memory   : 20082216 kB
+2022-12-08 21:48:46.269937 (20487) main____ INFO      committed address space: 103929688 kB
+2022-12-08 21:48:46.269951 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.270075 (20487) main____ INFO    Important environment variables:
+2022-12-08 21:48:46.270114 (20487) main____ INFO      DISPLAY        : ':2036.0'
+2022-12-08 21:48:46.270142 (20487) main____ INFO      LANG           : 'en_US.UTF-8'
+2022-12-08 21:48:46.270167 (20487) main____ INFO      LM_LICENSE_FILE: '5280@lshc:26585@lstn'
+2022-12-08 21:48:46.270183 (20487) main____ INFO    ----------------------------------------
+2022-12-08 21:48:46.270987 (20487) lic_core INFO    Initializing license system ...
+2022-12-08 21:48:46.271990 (20487) lic_core INFO    ... license system initialized.
+2022-12-08 21:48:46.274909 (20487) lic__man INFO    Claim 'main' for <ui>.
+2022-12-08 21:48:46.274995 (20487) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2022-12-08 21:48:46.338823 (20487) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2022-12-08 21:48:46.338940 (20487) lic_core INFO    (2) checking out 'jasper_pint' ...
+2022-12-08 21:48:46.503786 (20487) lic_core INFO    ... (2) checkout succeeded
+2022-12-08 21:48:46.504092 (20487) lic__man INFO    Claim 'superlint' for <ui>.
+2022-12-08 21:48:46.504183 (20487) lic_core INFO    (3) checking out 'jasper_afl' ...
+2022-12-08 21:48:46.565897 (20487) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2022-12-08 21:48:46.566021 (20487) lic_core INFO    (4) checking out 'jasper_dao' ...
+2022-12-08 21:48:46.723810 (20487) lic_core INFO    ... (4) checkout succeeded
+2022-12-08 21:48:46.725187 (20487) main____ INFO    Tool inactivity delay is 480000 ms.
+2022-12-08 21:48:48.665852 (20487) lic__man INFO    Claim 'superlint' for <ui>.
+2022-12-08 21:48:49.322069 (20487) lic__man INFO    Unclaim 'superlint' for <ui>.
+2022-12-08 21:48:49.322202 (20487) lic__man INFO    Claim 'superlint' for <ui>.
+2022-12-08 21:48:49.348434 (20487) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2022-12-08 21:48:49.360049 (20487) session_ INFO    Analysis session with session id 'session_0' started (pid: 20503)
+2022-12-08 21:48:52.888953 (20487) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:34896)
+2022-12-08 21:48:56.825842 (20487) lic__man INFO    Unclaim everything for 'session_0'.
+2022-12-08 21:49:23.742161 (20487) lic__man INFO    Unclaim everything for 'session_0'.
+2022-12-08 21:53:48.253695 (20487) main____ INFO    About to exit: requested from GUI
+2022-12-08 21:53:48.806771 (20487) session_ INFO    Analysis session 'session_0' disconnected.
+2022-12-08 21:53:48.823924 (20487) main____ INFO    Exiting with status 0.
